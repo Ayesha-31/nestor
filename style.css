@@ -1,0 +1,272 @@
+body{
+    overflow-x: hidden;
+}
+* {
+    margin: 6px;
+    font-family: 'BIZ UDPGothic', sans-serif;
+   
+}
+p{
+    padding-top: 20px;
+}
+
+.one,
+.two,
+.three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.two {
+    margin: 24px;
+}
+
+.three {
+    margin: 33px;
+}
+
+.line1 {
+    height: 2px;
+    background: rgb(217, 211, 211);
+    width: 100vw;
+}
+
+.line2 {
+    height: 2.5px;
+    background: rgb(247, 207, 219);
+    width: 100vw;
+
+}
+
+.line3 {
+    height: 4px;
+    background: rgb(229, 199, 227);
+    width: 100vw;
+
+}
+
+.box1 {
+    height: 2px;
+    background: rgb(217, 211, 211);
+}
+
+button {
+    background: #263d70;
+    border-top: 1px solid #38538c;
+    border-right: 1px solid #1f2d4d;
+    border-bottom: 1px solid #151e33;
+    border-left: 1px solid #1f2d4d;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 10px 1px #9eb1d9, 0 1px 0 #1d2c4d, 0 2px 0 #1f3053, 0 2px 4px 1px #111111;
+    box-shadow: inset 0 1px 10px 1px #728cc5, 0 1px 0 #1d2c4d, 0 1px 0 #1f3053, 0 2px 4px 1px #111111;
+    color: #fff;
+    font: bold 20px/1 "helvetica neue", helvetica, arial, sans-serif;
+    margin-bottom: 10px;
+    padding: 10px 0 12px 0;
+    text-align: center;
+    text-shadow: 0 -1px 1px #1e2d4d;
+    width: 150px;
+    -webkit-background-clip: padding-box;
+
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+button:hover {
+    border-color: #225096;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #010202;
+    transform: translateY(-0.09em);
+    cursor: pointer;
+}
+
+.vline1 {
+
+    margin: 0px;
+    border-left: 2px solid rgb(243, 203, 221);
+    background-color: transparent;
+    height: 74px;
+    position: absolute;
+    left: 87%;
+}
+
+.vline2 {
+    margin: 0px;
+    border-left: 2px solid rgb(243, 203, 221);
+    background-color: transparent;
+    height: 74px;
+    position: absolute;
+    left: 90%;
+}
+
+.vline3 {
+    margin: 0px;
+    border-left: 2px solid rgb(243, 203, 221);
+    background-color: transparent;
+    height: 74px;
+    position: absolute;
+    left: 97%;
+}
+
+.vline4 {
+    margin: 0px;
+    border-left: 2px solid rgb(243, 203, 221);
+    background-color: transparent;
+    height: 74px;
+    position: absolute;
+    /* right: 0%; */
+    left: 100%;
+}
+.vline5 {
+    margin: 0;
+    border-left: 2px solid rgb(243, 203, 221);
+    background-color: transparent;
+    height: 111px;
+    position: absolute;
+    right: 15%;
+
+}
+
+.vline6 {
+
+    border-left: 2px solid rgb(243, 203, 221);
+    background-color: transparent;
+    height: 110px;
+    position: absolute;
+    right: 10%;
+
+}
+
+.img1 {
+    padding: 0;
+    margin: 0;
+    height: 300px;
+    position: absolute;
+    left: 0%;
+}
+
+.img2 {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 5%;
+
+}
+
+
+
+.img3 {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 2%;
+
+}
+
+@media (max-width: 1000px){
+   button{
+       width: 70px;
+       height: 45px;
+       font-size: 12px;
+   }
+  p{
+      font-size: 9px;
+  }
+  .img3{
+      width: 4rem;
+  }
+}
+@media (max-width: 800px){
+    .one,
+    .two,
+    .three{
+        margin: 8px;
+    }
+    
+    p{
+        font-size: 0.4rem;
+    }
+    .img1 {
+        padding: 0;
+        margin: 0;
+        height: 225px;
+        width: 180px;
+        position: absolute;
+        left: 0%;
+    }
+    .vline1, .vline2, .vline3, .vline4 {
+        height: 79px;
+    
+     }
+    .vline5 {
+        height: 80px;
+        position: absolute;
+        right: 20%;
+    
+    }
+    .vline6 {
+        height: 60px;
+    }
+    .img3{
+        width: 3.5rem;
+    }
+
+ }
+ @media (max-width: 620px){
+    button{
+        width: 53px;
+        height: 35px;
+        font-size: 8px;
+    }
+   p{
+       font-size: 6px;
+   }
+   .three{
+       font-size: 10px;
+   }
+   .img1{
+    height: 180px;
+    width: 120px;
+   }
+   .one,
+   .two,
+   .three{
+       margin: 4px;
+   }
+
+   .vline1, .vline2, .vline3, .vline4 {
+    height: 65px;
+
+ }
+   .vline5 {
+    height: 67px;
+   }
+
+    .vline6 {
+    height: 50px;
+    }
+
+    .img2{
+        width: 3rem;
+    }
+    .img3{
+        width: 2rem;
+    }
+}
+@media (max-width: 410px){
+    .one,
+    .two,
+    .three{
+        margin: 0px;
+    }
+    p{
+        font-size: 3px;
+    }
+    .img1{
+        width: 100px;
+        height: 180px;
+    }
+   .img3{
+       width: 2rem;
+   }
+ }
